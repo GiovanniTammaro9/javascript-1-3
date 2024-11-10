@@ -12,7 +12,24 @@ function outerfunciotn(x, initialValue) {
 let risultato = outerfunciotn(5, 10);
 console.log(risultato);
 
-//persistenza delle variabili
+//counter
+
+function createCounter() {
+    let count = 0;
+    return {
+        increment : function() {
+            count += 1;
+            return count;
+        },
+
+        decrement : function() {
+            count -= 1;
+            return count;
+        }
+    }
+}
+
+
 
 
 
